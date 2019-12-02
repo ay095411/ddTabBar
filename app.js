@@ -1,3 +1,5 @@
+import utils from '/utils/utils'
+dd['utils'] = utils
 App({
   onLaunch(options) {
     console.log('App Launch', options);

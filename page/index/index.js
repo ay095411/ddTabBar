@@ -7,7 +7,13 @@ Component({
   didUnmount() {},
   methods: {
     aaa() {
-      console.log(11111111)
+      dd.utils.$http('/login','post').then(
+        (data) => {
+          console.log(data)
+        },
+        (err) => {
+          console.log('错误:'+err)
+        });
     }
-  },
+  }
 });
