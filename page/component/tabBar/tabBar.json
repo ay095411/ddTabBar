@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "index":"../../index/index",
+    "home":"../../home/home",
+    "mine":"../../mine/mine"
+  }
+}

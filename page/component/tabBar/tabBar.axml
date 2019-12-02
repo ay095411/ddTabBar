@@ -1,0 +1,19 @@
+<import src="/page/index/index.axml"/>
+<import src="/page/home/home.axml"/>
+<import src="/page/mine/mine.axml"/>
+<view hidden="{{currentTab == 0? false: true}}">
+  <index/>
+</view>
+<view hidden="{{currentTab == 1? false: true}}">
+  <home/> 
+</view>
+<view hidden="{{currentTab == 2? false: true}}">
+  <mine/>
+</view>
+
+<view class="nav-tabs">
+  <view class="tab-list {{currentTab == idx ? 'active' : 'default' }}" a:for="{{items}}" a:for-index="idx" a:for-item="item" data-current="{{idx}}" onTap="swichNav">
+    <text class="tab-text" a:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}">{{item.text}}</text>
+    <image class="iconPath" a:for-index="idx" data-current="{{idx}}" src="{{currentTab == idx ? item.selectedIconPath : item.iconPath }}"></image>
+  </view>
+</view>

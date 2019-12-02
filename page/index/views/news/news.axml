@@ -1,0 +1,5 @@
+<view class="content">
+  <view onTap="aaa">
+    我是新引进的页面
+  </view>
+</view>

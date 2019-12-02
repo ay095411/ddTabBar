@@ -1,0 +1,10 @@
+{
+  "pages": [
+    "page/component/tabBar/tabBar",
+    "page/index/views/news/news"
+  ],
+  "window": {
+    "backgroundColor": "#FFFFFF",
+    "titleBarColor": "#4385F5"
+  }
+}
